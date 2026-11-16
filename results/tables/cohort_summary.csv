@@ -1,0 +1,5 @@
+antibiotic,n_genomes,n_resistant,n_susceptible,pct_resistant
+gentamicin,7340,862,6478,11.7
+ciprofloxacin,7325,1852,5473,25.3
+ampicillin,6497,3662,2835,56.4
+tetracycline,877,518,359,59.1

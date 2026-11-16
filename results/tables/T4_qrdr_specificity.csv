@@ -1,0 +1,13 @@
+antibiotic,model,fold_country,fold_mlst
+ampicillin,LogisticRegression,0.686,0.695
+ampicillin,RandomForest,0.685,0.694
+ampicillin,XGBoost,0.685,0.695
+ciprofloxacin,LogisticRegression,0.984,0.98
+ciprofloxacin,RandomForest,0.981,0.98
+ciprofloxacin,XGBoost,0.984,0.98
+gentamicin,LogisticRegression,0.638,0.77
+gentamicin,RandomForest,0.635,0.759
+gentamicin,XGBoost,0.638,0.77
+tetracycline,LogisticRegression,0.579,0.604
+tetracycline,RandomForest,0.583,0.606
+tetracycline,XGBoost,0.575,0.607

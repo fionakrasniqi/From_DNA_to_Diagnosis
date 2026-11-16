@@ -1,0 +1,18 @@
+# Versions used to produce the reported results (Python 3.13, Windows 11).
+# The saved models in models/ were written with these versions; loading them
+# with other versions of scikit-learn or xgboost may fail or warn.
+#
+# torch: install the CPU build with
+#   pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cpu
+numpy==2.5.2
+pandas==3.0.5
+scikit-learn==1.9.0
+xgboost==3.4.1
+shap==0.52.0
+torch==2.13.0
+matplotlib==3.11.1
+requests==2.34.2
+joblib==1.6.0
+streamlit==1.63.0
+reportlab==5.0.1
+pytest>=8

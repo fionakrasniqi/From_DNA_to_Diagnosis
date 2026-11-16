@@ -1,0 +1,5 @@
+model,design,tuned_auroc,tuned_std,untuned_auroc
+LogisticRegression,fold_mlst,0.894,0.048,0.875
+LogisticRegression,fold_random,0.972,0.005,0.965
+XGBoost,fold_mlst,0.823,0.069,0.834
+XGBoost,fold_random,0.962,0.003,0.964

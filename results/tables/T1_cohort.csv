@@ -1,0 +1,5 @@
+antibiotic,antibiotiku,n_genomes,n_resistant,n_susceptible,pct_resistant
+ciprofloxacin,Ciprofloksacina,7266,1837,5429,25.3
+ampicillin,Ampicilina,6435,3616,2819,56.2
+tetracycline,Tetraciklina,845,504,341,59.6
+gentamicin,Gentamicina,7284,856,6428,11.8

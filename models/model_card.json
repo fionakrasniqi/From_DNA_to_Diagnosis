@@ -1,0 +1,79 @@
+{
+  "project": "From DNA to Diagnosis",
+  "built": "2026-10-06",
+  "seed": 42,
+  "k": 6,
+  "qrdr_features": [
+    "gyrA_83_R",
+    "gyrA_83_WT",
+    "gyrA_87_R",
+    "gyrA_87_WT",
+    "parC_80_R",
+    "parC_80_WT",
+    "parC_84_R",
+    "parC_84_WT"
+  ],
+  "deployable_note": "QRDR features are computed from sequence alone. CARD features require a BV-BRC genome identifier and are therefore excluded from the deployed path.",
+  "decision_rule": "Resistant if predicted probability >= 0.5. If gyrA 83 or parC 80 cannot be read, the application reports 'cannot determine'.",
+  "models": {
+    "qrdr_ciprofloxacin": {
+      "feature_set": "qrdr",
+      "model": "XGBoost",
+      "n_train": 7266,
+      "pct_resistant": 25.3,
+      "cv_auroc_mlst_grouped": 0.98,
+      "sensitivity_mlst_grouped": 0.938,
+      "specificity_mlst_grouped": 0.986,
+      "cv_auroc_country_holdout": 0.984,
+      "sensitivity_country_holdout": 0.953,
+      "specificity_country_holdout": 0.954
+    },
+    "qrdr_ampicillin": {
+      "feature_set": "qrdr",
+      "model": "XGBoost",
+      "n_train": 6435,
+      "pct_resistant": 56.2,
+      "cv_auroc_mlst_grouped": 0.695,
+      "sensitivity_mlst_grouped": 0.447,
+      "specificity_mlst_grouped": 0.922,
+      "cv_auroc_country_holdout": 0.685,
+      "sensitivity_country_holdout": 0.698,
+      "specificity_country_holdout": 0.62
+    },
+    "qrdr_tetracycline": {
+      "feature_set": "qrdr",
+      "model": "XGBoost",
+      "n_train": 845,
+      "pct_resistant": 59.6,
+      "cv_auroc_mlst_grouped": 0.607,
+      "sensitivity_mlst_grouped": 0.553,
+      "specificity_mlst_grouped": 0.644,
+      "cv_auroc_country_holdout": 0.575,
+      "sensitivity_country_holdout": 0.862,
+      "specificity_country_holdout": 0.165
+    },
+    "qrdr_gentamicin": {
+      "feature_set": "qrdr",
+      "model": "XGBoost",
+      "n_train": 7284,
+      "pct_resistant": 11.8,
+      "cv_auroc_mlst_grouped": 0.77,
+      "sensitivity_mlst_grouped": 0.763,
+      "specificity_mlst_grouped": 0.754,
+      "cv_auroc_country_holdout": 0.638,
+      "sensitivity_country_holdout": 0.736,
+      "specificity_country_holdout": 0.549
+    },
+    "kmer_ciprofloxacin": {
+      "feature_set": "kmer",
+      "model": "LogisticRegression",
+      "n_train": 7266,
+      "cv_auroc_mlst_grouped": 0.875,
+      "sensitivity_mlst_grouped": 0.594,
+      "specificity_mlst_grouped": 0.915,
+      "cv_auroc_country_holdout": 0.865,
+      "sensitivity_country_holdout": 0.705,
+      "specificity_country_holdout": 0.855
+    }
+  }
+}
